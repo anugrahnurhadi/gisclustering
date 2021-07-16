@@ -41,7 +41,7 @@ class Peta extends Component {
                                 <div className="Konten-munculkanan" style={{"z-index":"2","float":"right","position": "absolute","margin":"10px","right":0,"top":0,"bottom":0}}>
                                     <div className="card" style={{"width":"300px","height":"100%","background-color":"black","opacity":"70%","padding":"7px"}}>
                                         <div classNeme="card-body">
-                                            <p style={{"color":"white","font-size":"30px","text-align":"center"}}> <b>Clusters</b> </p>
+                                            <p style={{"color":"white","font-size":"30px","text-align":"center"}}> <b>Clustering</b> </p>
                                         </div>    
                                     </div>
                                 </div>
