@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/gisclustering/static/css/main.93804930.chunk.css",
+    "main.js": "/gisclustering/static/js/main.990280ea.chunk.js",
+    "main.js.map": "/gisclustering/static/js/main.990280ea.chunk.js.map",
+    "runtime-main.js": "/gisclustering/static/js/runtime-main.620c479d.js",
+    "runtime-main.js.map": "/gisclustering/static/js/runtime-main.620c479d.js.map",
+    "static/css/2.b30e83f5.chunk.css": "/gisclustering/static/css/2.b30e83f5.chunk.css",
+    "static/js/2.bf96b42f.chunk.js": "/gisclustering/static/js/2.bf96b42f.chunk.js",
+    "static/js/2.bf96b42f.chunk.js.map": "/gisclustering/static/js/2.bf96b42f.chunk.js.map",
+    "static/js/3.09a6eb66.chunk.js": "/gisclustering/static/js/3.09a6eb66.chunk.js",
+    "static/js/3.09a6eb66.chunk.js.map": "/gisclustering/static/js/3.09a6eb66.chunk.js.map",
+    "index.html": "/gisclustering/index.html",
+    "static/css/2.b30e83f5.chunk.css.map": "/gisclustering/static/css/2.b30e83f5.chunk.css.map",
+    "static/css/main.93804930.chunk.css.map": "/gisclustering/static/css/main.93804930.chunk.css.map",
+    "static/js/2.bf96b42f.chunk.js.LICENSE.txt": "/gisclustering/static/js/2.bf96b42f.chunk.js.LICENSE.txt",
+    "static/media/KBK.geojson": "/gisclustering/static/media/KBK.671d9989.geojson",
+    "static/media/earth.5f272509.png": "/gisclustering/static/media/earth.5f272509.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.620c479d.js",
+    "static/css/2.b30e83f5.chunk.css",
+    "static/js/2.bf96b42f.chunk.js",
+    "static/css/main.93804930.chunk.css",
+    "static/js/main.990280ea.chunk.js"
+  ]
+}
