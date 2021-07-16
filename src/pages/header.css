@@ -1,0 +1,34 @@
+@media (prefers-reduced-motion: no-preference) {
+    .Tulisan-keren {
+      animation: Tulisan-keren-spin infinite 5s linear;
+    }
+    .Konten-muncul{
+        animation: fadeIn 1s;
+    }
+
+    .Konten-munculkanan{
+      animation: comefromright 2s;
+  }
+
+  }
+
+  @keyframes Tulisan-keren-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes comefromright {
+    0% {top:1000px;opacity:0;}
+    100% {top:0px;opacity:1;}
+  }
+
+  
