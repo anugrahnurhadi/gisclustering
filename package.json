@@ -10,6 +10,7 @@
     "bootstrap": "^5.0.2",
     "json-loader": "^0.5.7",
     "leaflet": "^1.7.1",
+    "leaflet.markercluster": "^1.5.0",
     "page": "^1.11.6",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -18,8 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
