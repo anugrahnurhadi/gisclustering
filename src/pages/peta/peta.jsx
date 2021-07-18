@@ -10,8 +10,16 @@ import 'leaflet.markercluster/dist/leaflet.markercluster-src.js'
 import './../header.css'
 //import KBK from './../../asset/geoj
 import outlet from './../../asset/outletsample.json'
+import marker_icon_2x from './../../asset/images/marker_icon_2x.png'
+import marker_icon from './../../asset/images/marker_icon.png'
+import marker_shadow from './../../asset/images/marker_shadow.png'
 delete L.Icon.Default.prototype._getIconUrl;
 
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: marker_icon_2x,
+    iconUrl: marker_icon,
+    shadowUrl: marker_shadow
+});
 
 
 class Peta extends Component {
