@@ -34,7 +34,7 @@ class Peta extends Component {
     datamarkers=[];
     datapilih=[];
     jumoutlet=0;
-    distance=5000;
+    distance=10000;
     circle;
     polygon=[];
     kjumoutlet=[];
@@ -81,7 +81,7 @@ class Peta extends Component {
 
     map(){
         let self=this
-        let map = L.map('map',{editable: true}).setView([-6.3867823,107.1149245], 12);
+        let map = L.map('map',{editable: true}).setView([-6.3867823,107.1149245], 11.5);
         
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
