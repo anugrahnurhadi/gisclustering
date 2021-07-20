@@ -140,7 +140,9 @@ class Peta extends Component {
             
         });
         
+        
         this.circle.enableEdit();
+        this.circle.bringToFront()
     
         //map.fitBounds(self.circle.getBounds());
       
@@ -260,12 +262,21 @@ class Peta extends Component {
     myChangeHandler = (event) => {
         if(event.target.value=='' || event.target.value=='0' || event.target.value==0){
             this.setState({k: 0,
-                disablebutton:true
+                disablebutton:true,
+                errorcluster:true,
+                errormessege:'* Number of cluster cannot be zero.'
+            });
+        }
+        else if(event.target.value>this.state.jumoutlet){
+            this.setState({k: event.target.value,
+                disablebutton:true,
+                errorcluster:true,
+                errormessege:'* Number of cluster cannot be greater than the number of points.'
             });
         }
         else{
             this.setState({k: parseInt(event.target.value),
-                disablebutton:false});
+                disablebutton:false, errorcluster:false});
             
         }
     }
@@ -275,7 +286,10 @@ class Peta extends Component {
         k:3,
         knames:[],
         disablebutton:false,
-        listclusters:[]
+        listclusters:[],
+        errormessege:'',
+        errorcluster:false,
+
 
     }
 
@@ -316,6 +330,12 @@ class Peta extends Component {
                                                     /></td>
                                                 </tr>
                                             </table>
+                                            
+                                            {  this.state.errorcluster
+                                                ?<p style={{"color":"yellow","font-size":"13px","text-align":"center"}}> <b>{this.state.errormessege}</b> </p>
+                                                :<p></p>
+                                            }
+                                            <br/>
                                             <center>
                                                 <button disabled={this.state.disablebutton} style={{"margin-top":"20px","opacity":"100%"}} onClick={()=>{this.onGenerateSkmeans()}} className='btn btn-primary'> Create Cluster</button>
                                             </center>
